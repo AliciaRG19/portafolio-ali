@@ -3,72 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Ali</title>
-
+    <title>Alicia Rozo García | Ingeniera en Energía</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>ALICIA - Ingeniera en Energía</h1>
-        <p>Proyectos de energía, automatización y tecnología</p>
+    <!-- ENCABEZADO -->
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <img src="foto.jpg" alt="Foto de Alicia" class="profile-pic">
+
+            <h1>Alicia Rozo García</h1>
+
+            <h2>Ingeniera en Energía</h2>
+
+            <p>
+                Energías Renovables • Energía Solar • Comercialización de Energía
+            </p>
+
+            <div class="contact-icons">
+
+                <a href="https://wa.me/573001234567" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="mailto:correo@ejemplo.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
     </header>
 
-    <section class="sobre-mi">
+    <!-- SOBRE MI -->
+
+    <section class="about">
+
         <h2>Sobre mí</h2>
 
-        <p>
-            Soy estudiante de Ingeniería en Energía con experiencia
-            en proyectos de energía solar, automatización,
-            ESP32, sensores y diseño 3D.
-        </p>
-    </section>
-
-    <section class="proyectos">
-
-        <h2>Mis proyectos</h2>
-
-        <div class="tarjeta">
-
-            <h3>🌻 Girasol Solar Inteligente</h3>
+        <div class="card">
 
             <p>
-                Sistema de seguimiento solar con ESP32,
-                panel fotovoltaico y monitoreo IoT.
-            </p>
+                Soy Ingeniera en Energía con conocimientos en energías renovables,
+                comercialización de energía, sistemas fotovoltaicos,
+                electrónica, automatización y desarrollo de proyectos energéticos.
 
-        </div>
-
-        <div class="tarjeta">
-
-            <h3>👕 Ropa Deportiva Inteligente</h3>
-
-            <p>
-                Desarrollo de prendas con sensores
-                biométricos conectados a una aplicación.
-            </p>
-
-        </div>
-
-        <div class="tarjeta">
-
-            <h3>☀️ Sistema Fotovoltaico</h3>
-
-            <p>
-                Diseño y análisis de generación solar
-                usando herramientas de simulación.
+                Tengo experiencia en el sector energético, análisis de consumo,
+                gestión comercial y diseño de soluciones sostenibles.
             </p>
 
         </div>
 
     </section>
+
+    <!-- PROYECTOS -->
+
+    <section class="projects">
+
+        <h2>Mis Proyectos</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>🌻 Girasol Solar Inteligente</h3>
+                <p>
+                    Sistema de seguimiento solar con panel fotovoltaico,
+                    sensores LDR, ESP32 y monitoreo en línea.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>👕 Ropa Deportiva Inteligente</h3>
+                <p>
+                    Prendas con sensores para monitoreo de ritmo cardíaco,
+                    calorías y actividad muscular.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>☀️ Sistema Fotovoltaico</h3>
+                <p>
+                    Diseño y análisis técnico-económico para proyectos de
+                    generación solar.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>🤖 Automatización RFID</h3>
+                <p>
+                    Sistema de acceso inteligente utilizando ESP32,
+                    RFID, servomotores y pantalla LCD.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
 
     <footer>
-        <p>© 2026 - Ali</p>
-    </footer>
 
-    <script src="script.js"></script>
+        <p>
+            © 2026 Alicia Rozo García | Portafolio Profesional
+        </p>
+
+    </footer>
 
 </body>
 </html>
