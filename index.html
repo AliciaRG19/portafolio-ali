@@ -13,28 +13,36 @@
 
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="hero">
+    <!-- NAVBAR -->
 
-        <div class="hero-content">
+    <nav class="navbar">
 
-            <img src="foto.jpg" alt="Foto de Alicia" class="profile-pic">
+        <div class="logo">
 
-            <h1>Alicia Rozo García</h1>
+            <img src="alicia-rozo.jpeg" alt="Foto de Alicia" class="profile-img">
 
-            <h2>Ingeniera en Energía</h2>
+            <div class="logo-text">
+                <h3>Alicia Rozo García</h3>
+                <span>Ingeniera en Energía</span>
+            </div>
 
-            <p>
-                Energías Renovables • Energía Solar • Comercialización de Energía
-            </p>
+        </div>
 
-            <div class="contact-icons">
+        <ul class="nav-links">
 
-                <a href="https://wa.me/573001234567" target="_blank">
+            <li><a href="#about">Perfil Profesional</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+
+        </ul>
+
+        <div class="contact-icons">
+
+                <a href="https://wa.me/573208238400" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                 </a>
 
-                <a href="mailto:correo@ejemplo.com">
+                <a href="mailto:aliciarozogarcia@gmail.com">
                     <i class="fas fa-envelope"></i>
                 </a>
 
@@ -42,31 +50,46 @@
                     <i class="fab fa-linkedin"></i>
                 </a>
 
-                <a href="https://github.com" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-
             </div>
+
+    </nav>
+
+    <!-- ENCABEZADO -->
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <h1>Alicia Rozo García</h1>
+
+            <h2>Ingeniera en Energía</h2>
+
+            <a href="CV-alicia.pdf"
+            download
+            class="cv-btn">
+
+                <i class="fas fa-file-pdf"></i>
+                Descargar CV
+
+            </a>
 
         </div>
 
     </header>
 
-    <!-- SOBRE MI -->
+    <!-- PERFIL PROFESIONAL -->
 
-    <section class="about">
+    <section class="about" id="about">
 
-        <h2>Sobre mí</h2>
+        <h2>Perfil Profesional</h2>
 
         <div class="card">
 
             <p>
-                Soy Ingeniera en Energía con conocimientos en energías renovables,
-                comercialización de energía, sistemas fotovoltaicos,
-                electrónica, automatización y desarrollo de proyectos energéticos.
+                Ingeniera en Energía con experiencia en el sector energético de una comercializadora líder en energía. Cuento con una sólida formación en optimización y desarrollo de fuentes energéticas sostenibles, incluyendo biocombustibles, energía solar, eólica e hidrógeno, con enfoque en la transición y eficiencia energética; adicionalmente, cuento con un enfoque innovador orientado al diseño y desarrollo de nuevas estrategias de generación y optimización energética, buscando mejorar la eficiencia, sostenibilidad y competitividad de los procesos mediante el uso de tecnologías emergentes y análisis técnico.
+            </p>
 
-                Tengo experiencia en el sector energético, análisis de consumo,
-                gestión comercial y diseño de soluciones sostenibles.
+            <p>
+                Poseo conocimientos en diseño e implementación de sistemas inteligentes para la gestión energética en entornos industriales, apoyados en bases de electrónica, robótica, automatización y sistemas distribuidos; además, manejo herramientas de simulación, análisis de datos y programación, lo que permite aportar a la toma de decisiones técnicas. Asimismo, cuento con habilidades en trabajo en equipo, comunicación efectiva y resolución de problemas, integrando perspectivas técnicas operacionales y comerciales alineadas con la modernización del sector energético.
             </p>
 
         </div>
@@ -75,7 +98,7 @@
 
     <!-- PROYECTOS -->
 
-    <section class="projects">
+    <section class="projects" id="projects">
 
         <h2>Mis Proyectos</h2>
 
@@ -119,7 +142,7 @@
 
     <!-- FOOTER -->
 
-    <footer>
+    <footer id="contact">
 
         <p>
             © 2026 Alicia Rozo García | Portafolio Profesional

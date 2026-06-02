@@ -14,12 +14,121 @@ body{
     background: linear-gradient(
         135deg,
         #e0f2fe,
-        #dbeafe,
-        #ede9fe
+        #f8baeb,
+        #e2a0f3
     );
 
     min-height:100vh;
     color:#1e293b;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding:5px 5%;
+
+    background:rgba(255, 255, 255, 0.164);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        0 4px 20px rgba(0,0,0,0.08);
+
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile-img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid rgba(255,255,255,0.8);
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+}
+
+.logo h3{
+
+    color:#ffffffce;
+    
+    font-size:1.1rem;
+}
+
+.logo span{
+
+    font-size:0.85rem;
+
+    color:#dcfff59c;
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#ffffffaf;
+
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+
+    color:#000000b7;
+}
+
+.cv-btn{
+
+    background:#3a3a3a41;
+    color:rgba(187, 181, 181, 0.774);
+    border:2px solid rgba(187, 181, 181, 0.774);
+
+    text-decoration:none;
+    padding:10px 22px;
+    border-radius:50px;
+    font-weight:800;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:0.3s;
+}
+
+.cv-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(66, 117, 211, 0.3);
 }
 
 /* HERO */
@@ -28,66 +137,99 @@ body{
 
     min-height:100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    position:relative;
 
-    text-align:center;
+    overflow:hidden;
+}
 
-    padding:40px;
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background: 
+    radial-gradient(
+    ellipse 500px 200px at 27% 80%,
+    rgba(0, 0, 0, 0.863) 60%,
+    rgba(0, 0, 0, 0.116) 150%,
+    rgba(0, 0, 0, 0.096) 0%
+    ),    
+    url("hero-bg-4.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+    z-index:1;
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:100%;
+    height:250px;
+
+    background:linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        #000000
+    );
+
+    z-index:2;
 }
 
 .hero-content{
 
-    background:rgba(255,255,255,0.35);
+    position:absolute;
 
-    backdrop-filter:blur(15px);
+    left:80px;
+    bottom:40px;
 
-    border-radius:30px;
-
-    padding:50px;
-
+    z-index:3;
     max-width:800px;
-
-    box-shadow:
-        0 10px 40px rgba(0,0,0,0.12);
-}
-
-.profile-pic{
-
-    width:180px;
-    height:180px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    border:5px solid #7c3aed;
-
-    margin-bottom:20px;
+    padding:40px;
+    color:white;
+    text-align:left;
 }
 
 .hero h1{
 
-    font-size:3rem;
+    font-size:4rem;
 
-    color:#2563eb;
+    color:rgb(226, 220, 220);
+
+    text-shadow:
+        0 4px 20px rgba(0,0,0,0.4);
 }
 
 .hero h2{
 
-    color:#7c3aed;
+    color:#919090;
 
-    margin-bottom:10px;
+    margin-bottom:15px;
 
-    font-weight:500;
+    text-shadow:
+        0 4px 15px rgba(0,0,0,0.4);
 }
 
 .hero p{
 
-    font-size:1.1rem;
+    color:white;
 
-    margin-bottom:25px;
+    text-shadow:
+        0 2px 10px rgba(0,0,0,0.5);
 }
 
 /* ICONOS */
@@ -106,9 +248,9 @@ body{
     width:55px;
     height:55px;
 
-    background:#2563eb;
+    background:#3333334b;
 
-    color:white;
+    color:rgba(255, 255, 255, 0.719);
 
     border-radius:50%;
 
@@ -126,7 +268,7 @@ body{
 
 .contact-icons a:hover{
 
-    background:#fbbf24;
+    background:#68a9d4a2;
 
     color:#111827;
 
@@ -169,6 +311,10 @@ section h2{
         0 8px 25px rgba(0,0,0,0.08);
 
     line-height:1.8;
+}
+
+.card p + p {
+    margin-top: 20px;
 }
 
 /* PROYECTOS */
