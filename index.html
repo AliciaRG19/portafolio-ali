@@ -13,13 +13,13 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!---------------------- NAVBAR ------------------------>
 
     <nav class="navbar">
 
         <div class="logo">
 
-            <img src="alicia-rozo.jpeg" alt="Foto de Alicia" class="profile-img">
+            <img src="images/alicia-rozo.jpeg" alt="Foto de Alicia" class="profile-img">
 
             <div class="logo-text">
                 <h3>Alicia Rozo García</h3>
@@ -54,7 +54,7 @@
 
     </nav>
 
-    <!-- ENCABEZADO -->
+    <!---------------------- ENCABEZADO ------------------------>
     <header class="hero">
 
         <div class="hero-content">
@@ -76,31 +76,297 @@
 
     </header>
 
-    <!-- PERFIL PROFESIONAL -->
+    <!------------------ PERFIL PROFESIONAL ------------------------>
 
     <section class="about" id="about">
 
-        <h2>Perfil Profesional</h2>
 
-        <div class="card">
+        <div class="energy-slider">
 
-            <p>
-                Ingeniera en Energía con experiencia en el sector energético de una comercializadora líder en energía. Cuento con una sólida formación en optimización y desarrollo de fuentes energéticas sostenibles, incluyendo biocombustibles, energía solar, eólica e hidrógeno, con enfoque en la transición y eficiencia energética; adicionalmente, cuento con un enfoque innovador orientado al diseño y desarrollo de nuevas estrategias de generación y optimización energética, buscando mejorar la eficiencia, sostenibilidad y competitividad de los procesos mediante el uso de tecnologías emergentes y análisis técnico.
-            </p>
+            <!-- TARJETA PRINCIPAL -->
 
-            <p>
-                Poseo conocimientos en diseño e implementación de sistemas inteligentes para la gestión energética en entornos industriales, apoyados en bases de electrónica, robótica, automatización y sistemas distribuidos; además, manejo herramientas de simulación, análisis de datos y programación, lo que permite aportar a la toma de decisiones técnicas. Asimismo, cuento con habilidades en trabajo en equipo, comunicación efectiva y resolución de problemas, integrando perspectivas técnicas operacionales y comerciales alineadas con la modernización del sector energético.
+            <div class="energy-panel active"
+                style="background-image:url('images/perfil.jpg')"
+                data-title="Perfil Profesional"
+                data-short="Trabajo enfocada en las energías renovables, transición energética y optimización de recursos."
+                data-contribution="Cuento con experiencia en el sector energético, especialmente en comercialización de energía y desarrollo de soluciones para la optimización de recursos energéticos. Cuento con formación en tecnologías renovables como energía solar, eólica, biomasa, biocombustibles e hidrógeno, complementada con conocimientos en eficiencia energética, almacenamiento de energía y transición energética. Además, poseo bases en electrónica, automatización, robótica, programación, sistemas distribuidos y análisis de datos aplicados al sector energético, lo que me permite integrar capacidades técnicas, operativas y comerciales para diseñar estrategias innovadoras que mejoren el desempeño energético de organizaciones e industrias, impulsando proyectos orientados a la sostenibilidad, digitalización y modernización de los sistemas energéticos."
+                data-full="Cuento con experiencia en programación utilizando Python, Java, SQL y C++, así como en el desarrollo de aplicaciones y páginas web mediante HTML, CSS y JavaScript. Tengo conocimientos en sistemas distribuidos sobre entornos Linux y Windows, orientados a la integración de múltiples equipos que operan como un único sistema. En el área de IoT y electrónica, manejo herramientas como Proteus y Multisim para diseño y simulación electrónica, además de plataformas como Arduino y ESP32 para el desarrollo de soluciones de monitoreo y automatización. Poseo experiencia en modelado y simulación mediante MATLAB y Simulink, así como en el diseño, optimización y análisis de sistemas energéticos con HOMER Pro, PVsyst, PV*SOL, Windographer y CYPECAD MEP. También utilizo Fusion 360 y SolidWorks para diseño e impresión 3D y simulaciones básicas. En análisis de datos y transformación digital, trabajo con Power BI y Looker Studio para visualización y generación de informes, así como con Power Automate y Power Apps para la automatización de procesos internos. Adicionalmente, cuento con conocimientos en mercado eléctrico y regulación colombiana, incluyendo normativa y procesos relacionados con CREG, XM y SIC, liquidaciones, contratos bilaterales y operación del mercado de energía. Tengo experiencia en la elaboración de diagramas unifilares y P&ID, así como en la aplicación de estándares y normativas como RETIE y NTC 2050 para instalaciones eléctricas. Finalmente, manejo herramientas de gestión comercial y CRM como Zoho, Pipedrive y Kolibri para la administración de clientes, contratos y procesos comerciales.">
+
+                <div class="overlay"></div>
+
+                <div class="content">
+                    <h2 class="panelTitle"></h2>
+                    <p class="panelShort"></p>
+                    <button class="moreBtn">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+
+            <!-- SOLAR -->
+
+            <div class="energy-panel"
+
+                style="background-image:url('images/solar.jpg')"
+
+                data-title="Energía Solar"
+                data-short="Aprovecha la radiación solar para generar electricidad y calor de forma sostenible."
+                data-contribution="Como ingeniera en energía con enfoque en energías renovables, puedo participar en el diseño, dimensionamiento, evaluación técnica y económica, supervisión de instalación y monitoreo de sistemas fotovoltaicos y solares térmicos, optimizando la generación energética y promoviendo la integración eficiente de esta tecnología en entornos residenciales, comerciales e industriales."
+                data-full="La energía solar se obtiene mediante la captación de la radiación proveniente del Sol y su transformación en energía útil. En los sistemas fotovoltaicos, los paneles solares convierten directamente la luz solar en electricidad mediante el efecto fotovoltaico. La energía generada pasa por inversores que transforman la corriente continua en corriente alterna para su consumo o inyección a la red eléctrica. Su implementación requiere estudios de radiación, orientación, inclinación, análisis de sombras y dimensionamiento adecuado de los equipos. Gracias a su modularidad, bajos costos operativos y reducción de emisiones de gases de efecto invernadero, se ha convertido en una de las principales tecnologías para la transición energética mundial.">
+
+                <div class="overlay"></div>
+
+                <div class="content">             <!-- CONTENIDO DE LA TARJETA EXPANDIDA -->
+                    <h2 class="panelTitle"></h2>
+                    <p class="panelShort"></p>
+                    <button class="moreBtn">
+                        Ver más
+                    </button>
+                </div>
+
+                <div class="small-title">         <!-- Titulo tarjeta cerrada -->
+                    Solar
+                </div>
+
+            </div>
+
+            <!-- EOLICA -->
+
+            <div class="energy-panel"
+
+                style="background-image:url('images/eolica.jpg')"
+
+                data-title="Energía Eólica"
+                data-short="Transforma la energía cinética del viento en electricidad limpia y renovable."
+                data-contribution="Puedo desarrollar estudios de recurso eólico, análisis de viabilidad técnica y económica, selección de aerogeneradores, evaluación de producción energética y gestión de proyectos para la implementación de parques eólicos terrestres y marinos."
+                data-full="La energía eólica aprovecha la fuerza del viento mediante aerogeneradores que convierten la energía cinética del aire en energía mecánica y posteriormente en electricidad. El proceso inicia con la caracterización del recurso eólico mediante mediciones de velocidad, dirección y comportamiento del viento durante largos periodos. Posteriormente se seleccionan los aerogeneradores adecuados y se diseña la distribución óptima del parque para maximizar la producción energética. La electricidad generada se acondiciona mediante sistemas de potencia y se conecta a la red eléctrica. Es una tecnología de alta eficiencia y bajo impacto ambiental durante su operación, siendo una de las fuentes renovables más utilizadas a nivel mundial.">
+
+                <div class="overlay"></div>
+
+                <div class="content">             <!-- CONTENIDO DE LA TARJETA EXPANDIDA -->
+                    <h2 class="panelTitle"></h2>
+                    <p class="panelShort"></p>
+                    <button class="moreBtn">
+                        Ver más
+                    </button>
+                </div>
+
+                <div class="small-title">         <!-- Titulo tarjeta cerrada -->
+                    Eólica
+                </div>
+
+            </div>
+
+            <!-- HIDROELECTRICA -->
+
+            <div class="energy-panel"
+
+                style="background-image:url('images/hidroelectrica.jpg')"
+
+                data-title="Hidroeléctrica"
+                data-short="Convierte la energía del agua en movimiento en electricidad renovable."
+                data-contribution="Puedo participar en la evaluación del potencial hídrico, modelación energética, análisis de generación, optimización operativa y estudios de sostenibilidad para centrales hidroeléctricas de diferentes escalas."
+                data-full="La energía hidroeléctrica se genera aprovechando la energía potencial y cinética del agua almacenada o en movimiento. En una central hidroeléctrica, el agua pasa a través de conductos forzados que dirigen el flujo hacia turbinas hidráulicas. La rotación de las turbinas acciona generadores eléctricos que producen electricidad. Dependiendo de las características del recurso hídrico, pueden construirse centrales de embalse, de pasada o minicentrales. Esta tecnología destaca por su alta eficiencia energética, capacidad de regulación y almacenamiento mediante embalses, contribuyendo significativamente a la estabilidad y confiabilidad de los sistemas eléctricos.">
+
+                <div class="overlay"></div>
+
+                <div class="content">             <!-- CONTENIDO DE LA TARJETA EXPANDIDA -->
+                    <h2 class="panelTitle"></h2>
+                    <p class="panelShort"></p>
+                    <button class="moreBtn">
+                        Ver más
+                    </button>
+                </div>
+
+                <div class="small-title">         <!-- Titulo tarjeta cerrada -->
+                    Hidroeléctrica
+                </div>
+
+            </div>
+
+            <!-- GEOTERMICA -->
+
+            <div class="energy-panel"
+
+                style="background-image:url('images/geotermica.jpg')"
+
+                data-title="Energía Geotérmica"
+                data-short="Utiliza el calor interno de la Tierra para producir energía sostenible."
+                data-contribution="Puedo colaborar en la evaluación del potencial geotérmico, análisis energético de reservorios, diseño de sistemas de aprovechamiento térmico y estudios de viabilidad para generación eléctrica o aplicaciones de calor industrial."
+                data-full="La energía geotérmica aprovecha el calor almacenado en el interior de la Tierra. Este calor puede encontrarse en forma de vapor, agua caliente o rocas de alta temperatura ubicadas a diferentes profundidades. Mediante perforaciones especializadas se accede a estos recursos térmicos para extraer vapor o fluidos calientes que accionan turbinas generadoras de electricidad o se emplean directamente en procesos industriales y sistemas de calefacción. Su principal ventaja es la capacidad de generar energía de forma continua durante todo el año, independientemente de las condiciones climáticas, convirtiéndola en una fuente renovable altamente confiable.">
+
+                <div class="overlay"></div>
+
+                <div class="content">             <!-- CONTENIDO DE LA TARJETA EXPANDIDA -->
+                    <h2 class="panelTitle"></h2>
+                    <p class="panelShort"></p>
+                    <button class="moreBtn">
+                        Ver más
+                    </button>
+                </div>
+
+                <div class="small-title">         <!-- Titulo tarjeta cerrada -->
+                    Geotérmica
+                </div>
+
+            </div>
+
+            <!-- BIOMASA -->
+
+            <div class="energy-panel"
+
+                style="background-image:url('images/biomasa.jpg')"
+
+                data-title="Biomasa"
+                data-short="Genera energía mediante el aprovechamiento sostenible de materia orgánica renovable."
+                data-contribution="Puedo diseñar sistemas de aprovechamiento energético de residuos agrícolas, forestales e industriales, evaluar procesos de conversión energética y optimizar la producción de energía térmica y eléctrica a partir de biomasa."
+                data-full="La biomasa comprende materiales orgánicos de origen vegetal o animal que pueden utilizarse como fuente de energía. Entre ellos se encuentran residuos agrícolas, forestales, pecuarios, urbanos e industriales. Estos materiales pueden someterse a procesos como combustión, gasificación, pirólisis o digestión anaerobia para producir calor, electricidad o combustibles. Su aprovechamiento permite valorizar residuos que de otra manera serían desechados, contribuyendo a la economía circular y a la reducción de emisiones asociadas a combustibles fósiles. La eficiencia del sistema depende de la calidad de la biomasa, la tecnología empleada y las condiciones operativas.">
+
+                <div class="overlay"></div>
+
+                <div class="content">             <!-- CONTENIDO DE LA TARJETA EXPANDIDA -->
+                    <h2 class="panelTitle"></h2>
+                    <p class="panelShort"></p>
+                    <button class="moreBtn">
+                        Ver más
+                    </button>
+                </div>
+
+                <div class="small-title">         <!-- Titulo tarjeta cerrada -->
+                    Biomasa
+                </div>
+
+            </div>
+
+            <!-- BIOCOMBUSTIBLES -->
+
+            <div class="energy-panel"
+
+                style="background-image:url('images/biocombustibles.jpg')"
+
+                data-title="Biocombutibles"
+                data-short="Combustibles renovables producidos a partir de materia prima biológica sostenible."
+                data-contribution="Puedo participar en la producción, caracterización y evaluación de biocombustibles, así como en estudios de sostenibilidad, eficiencia energética y reducción de emisiones en el sector transporte e industrial."
+                data-full="Los biocombustibles son combustibles obtenidos a partir de biomasa mediante procesos físicos, químicos o biológicos. Los más comunes son el bioetanol, producido principalmente mediante fermentación de azúcares y almidones, y el biodiésel, obtenido mediante transesterificación de aceites vegetales o grasas animales. También existen biocombustibles avanzados elaborados a partir de residuos agrícolas, forestales y urbanos. Estos combustibles pueden mezclarse o sustituir parcialmente a los combustibles fósiles convencionales, reduciendo las emisiones de gases de efecto invernadero y promoviendo una matriz energética más sostenible para el transporte y diversos procesos industriales.">
+
+                <div class="overlay"></div>
+
+                <div class="content">             <!-- CONTENIDO DE LA TARJETA EXPANDIDA -->
+                    <h2 class="panelTitle"></h2>
+                    <p class="panelShort"></p>
+                    <button class="moreBtn">
+                        Ver más
+                    </button>
+                </div>
+
+                <div class="small-title">         <!-- Titulo tarjeta cerrada -->
+                    Biocombustibles
+                </div>
+
+            </div>
+
+            <!-- ENERGIAS MARINAS -->
+
+            <div class="energy-panel"
+
+                style="background-image:url('images/marina.jpeg')"
+
+                data-title="Energías Marinas"
+                data-short="Aprovecha olas, mareas y corrientes marinas para producir electricidad renovable."
+                data-contribution="Puedo evaluar recursos oceánicos, analizar tecnologías de aprovechamiento marino, modelar la producción energética y participar en proyectos de integración de energías marinas a sistemas eléctricos sostenibles."
+                data-full="Las energías marinas engloban diversas tecnologías que aprovechan el potencial energético de los océanos. Entre ellas se encuentran la energía mareomotriz, que utiliza las variaciones periódicas de las mareas; la energía undimotriz, que aprovecha el movimiento de las olas; y la energía de corrientes marinas, que captura la energía cinética del agua en movimiento. Los dispositivos instalados transforman estos movimientos en energía mecánica y posteriormente en electricidad. Aunque aún se encuentran en desarrollo comparadas con otras renovables, poseen un gran potencial debido a la alta densidad energética y predictibilidad de los fenómenos oceánicos.">
+
+                <div class="overlay"></div>
+
+                <div class="content">             <!-- CONTENIDO DE LA TARJETA EXPANDIDA -->
+                    <h2 class="panelTitle"></h2>
+                    <p class="panelShort"></p>
+                    <button class="moreBtn">
+                        Ver más
+                    </button>
+                </div>
+
+                <div class="small-title">         <!-- Titulo tarjeta cerrada -->
+                    Energías Marinas
+                </div>
+
+            </div>
+
+            <!-- HIDROGENO -->
+
+            <div class="energy-panel"
+
+                style="background-image:url('images/hidrogeno.jpg')"
+
+                data-title="Hidrogeno Verde"
+                data-short="Vector energético limpio producido mediante electrólisis usando electricidad renovable."
+                data-contribution="Puedo participar en el diseño y evaluación de sistemas de producción de hidrógeno verde, integración con energías renovables, análisis de almacenamiento, transporte y aplicaciones industriales para la descarbonización energética."
+                data-full="El hidrógeno verde se obtiene mediante un proceso llamado electrólisis, en el cual la electricidad proveniente de fuentes renovables separa las moléculas de agua en hidrógeno y oxígeno. El hidrógeno producido puede almacenarse, transportarse y utilizarse posteriormente en celdas de combustible, procesos industriales, generación eléctrica o transporte pesado. Su importancia radica en su capacidad para almacenar grandes cantidades de energía renovable y sustituir combustibles fósiles en sectores difíciles de electrificar. Actualmente es considerado uno de los pilares fundamentales para alcanzar objetivos de descarbonización y neutralidad climática en múltiples industrias.">
+
+                <div class="overlay"></div>
+
+                <div class="content">             <!-- CONTENIDO DE LA TARJETA EXPANDIDA -->
+                    <h2 class="panelTitle"></h2>
+                    <p class="panelShort"></p>
+                    <button class="moreBtn">
+                        Ver más
+                    </button>
+                </div>
+
+                <div class="small-title">         <!-- Titulo tarjeta cerrada -->
+                    Hidrogeno Verde
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+        <div class="energy-description-box">
+
+            <h3 id="energyTitle">
+                INGENIERA EN ENERGÍA
+            </h3>
+
+            <p id="energyDescription">
+                Cuento con experiencia en el sector energético, especialmente en comercialización de energía y desarrollo de soluciones para la optimización de recursos energéticos. Cuento con formación en tecnologías renovables como energía solar, eólica, biomasa, biocombustibles e hidrógeno, complementada con conocimientos en eficiencia energética, almacenamiento de energía y transición energética. Además, poseo bases en electrónica, automatización, robótica, programación, sistemas distribuidos y análisis de datos aplicados al sector energético, lo que me permite integrar capacidades técnicas, operativas y comerciales para diseñar estrategias innovadoras que mejoren el desempeño energético de organizaciones e industrias, impulsando proyectos orientados a la sostenibilidad, digitalización y modernización de los sistemas energéticos.
             </p>
 
         </div>
 
-    </section>
+       </section>
+    
+    <!-- MODAL ENERGIAS -->
 
-    <!-- PROYECTOS -->
+    <div class="energy-modal" id="energyModal">
+
+        <div class="modal-card">
+
+            <button class="close-modal" id="closeModal">
+                ✕
+            </button>
+
+            <div class="modal-image" id="modalImage"></div>
+
+            <div class="modal-content">
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalText"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+   
+    <!------------------------ PROYECTOS ------------------------>
 
     <section class="projects" id="projects">
 
-        <h2>Mis Proyectos</h2>
+        <h5>Mis Proyectos</h5>
 
         <div class="project-grid">
 
@@ -135,6 +401,18 @@
                     RFID, servomotores y pantalla LCD.
                 </p>
             </div>
+            
+
+
+            <div class="project-card">
+                <h3>🤖 Automatización RFID</h3>
+                <p>
+                    Sistema de acceso inteligente utilizando ESP32,
+                    RFID, servomotores y pantalla LCD.
+                </p>
+            </div>
+
+
 
         </div>
 
@@ -149,6 +427,10 @@
         </p>
 
     </footer>
+
+    <!---------------------- JavaScript --------------------->
+
+    <script src="script.js"></script>
 
 </body>
 </html>
